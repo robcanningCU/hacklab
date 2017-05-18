@@ -22,8 +22,8 @@ api = tweepy.API(auth)
 me = api.me()
 
 print(me.name); # print the information
-# print(me.location); # uncomment these to see more specific details
-# print(me.screen_name);
+print(me.location); # uncomment these to see more specific details
+print(me.screen_name);
 # print(me) # this will show everything
 
 # get information about your followers
@@ -37,6 +37,6 @@ followers = tweepy.Cursor(api.followers).items()
 # data, uncomment the below on line at a time to see the data
 for person in followers:
         print person.name
-        # print person.location
-        # print person.profile_image_url
-        # print person # this will show all the data about each person
+        print person.location
+        print person.profile_image_url
+#         # print person # this will show all the data about each person
