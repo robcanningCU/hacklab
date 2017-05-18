@@ -1,7 +1,8 @@
-import tweepy
-import random
-import time
-import string
+#!/usr/bin/python  # lets the computer know that this file should be run with python
+import tweepy # import the tweepy module http://tweepy.readthedocs.io/en/v3.5.0/
+# this might need installing: sudo pip install tweepy
+# if pip isn't installed then: sudo easy_install pip
+import random, time #  we can import lots of modules together on a single comma seperated line
 
 class TwitterAPI:
     # this init function sorts out the authentication
@@ -26,7 +27,9 @@ tweets = [
     "#foo #tweet",
     "LOUD tweet",
     "#tweet #tweet"
-    ]
+    ] # you can just keep adding stuff to the list
+      # remember to add commas and no comma after the last entry
+
 # the below if __name__ == "__main__": basically means
 # "if you are running as a normal script rather than an library"
 if __name__ == "__main__":
