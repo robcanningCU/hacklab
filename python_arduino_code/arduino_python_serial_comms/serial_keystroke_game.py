@@ -1,17 +1,14 @@
+#!/usr/bin/python
 import serial, time
 import pygame
-
 # pygame is a handy library for doing lots of stuff like controling audio,
 # getting keystrokes, drawing stuff to screen... anything you would expect in a
 # game - for this example I am simply using it to detect key press events
 # to install it you will need to run: sudo pip install pygame
-
 pygame.init() # start and initialise the game engine
 pygame.display.set_mode((600,400),0,32) # initialise the default display
 # you need to have the game focused for the key strokes to be detected
 screen = pygame.display.set_caption('Arduino/Python Serial Link')
-
-
 # set up the serial port ready to commuicate to the arduino
 SPEED = 9600
 PORT = '/dev/cu.usbmodem1411' # you may need to change this for your system
